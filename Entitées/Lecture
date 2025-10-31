@@ -1,0 +1,32 @@
+{
+  "name": "SensorReading",
+  "type": "object",
+  "properties": {
+    "temperature": {
+      "type": "number",
+      "description": "Temperature in Celsius"
+    },
+    "humidity": {
+      "type": "number",
+      "description": "Humidity percentage"
+    },
+    "refrigerator": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B"
+      ],
+      "description": "Refrigerator identifier"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Reading timestamp"
+    }
+  },
+  "required": [
+    "temperature",
+    "humidity",
+    "refrigerator"
+  ]
+}
